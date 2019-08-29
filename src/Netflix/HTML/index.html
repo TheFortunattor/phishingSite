@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Netlix</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="../imagenes/netflix.png" alt="Logo de Netflix"></a>
+    </header>
+    <section class="principal">
+        <h1>Inicia sesión</h1>
+        <form method="post" onsubmit="return cargar();">
+            <div>
+                <input class="inputText" type="text" name="usuario" id="usr" placeholder="Email o número de teléfono">
+            </div>
+            <div>
+                <input class="inputText" type="password" name="contraseña" id="pass" placeholder="Contraseña">
+            </div>
+            <div>
+                <input class="submit" type="submit" value="Iniciar Sesión">
+            </div>
+            <div>
+                <input class="checkbox" type="checkbox"> <a class=recuerdame> Recuérdame </a> <a class="needHelp" href="#"> ¿Necesitas ayuda? </a>
+            </div>
+            <div>
+                <a href="#"><img src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png" class="logoface" alt="Logo de Facebook"></a> <a class="iniFace" href="#"> Iniciar sesión con Facebook </a>
+            </div>
+            <div class="bloque2">
+                <a class="primeraVez"> ¿Primera vez en Netflix? </a> <a class="suscribe">Suscribete Ya</a>
+            </div>
+
+        </form>
+    </section>
+    <script src="../JS/ajaxFunction.js"></script>
+</body>
+</html>
