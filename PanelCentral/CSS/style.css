@@ -1,0 +1,33 @@
+@media only screen and (min-width: 800px) {
+    .Fondo{
+        background-image: url(../imagenes/FondoGris.jpg);
+        background-size: 100%;
+    }}
+    .TxtAsunto{
+        margin-top: 10%;
+        color: white;
+    }
+    .Asunto{
+        margin-left: 5%;
+        margin-bottom: 5%;
+        width: 90%;
+        border-color: blue;
+    }
+    .Descripcion{
+        width: 100%;
+        height: 30%;
+        border-color: blue;
+    } 
+    .FB{
+        margin-left: 37%;
+        width: 7%;
+        border-radius: 100%;
+    }
+    .netflix{
+        margin-left: 5%;
+        width: 10%;
+    }
+    .Eleccion{
+        margin-left: 40%;
+    }
+
