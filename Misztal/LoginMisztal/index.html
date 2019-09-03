@@ -9,16 +9,16 @@
 </head>
 <body>
     <form>
-       /*<form method="post" onsubmit="return cargar();">*/
+       <form action="PHP/checkLogin.php" method="POST">
         <section class="principal">
             <div>
                 <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Total_solar_eclipse_2019_at_La_Silla_Observatory.jpg/330px-Total_solar_eclipse_2019_at_La_Silla_Observatory.jpg"></a>            
             </div>
             <div>
-                <input class="inputName" type="text">
+                <input class="inputName" type="text" name="name">
             </div>
             <div>
-                <input class="inputPass" type="password">
+                <input class="inputPass" type="password" name="pass">
             </div>
             <div>
                 <input class="submit" type="submit" value="Iniciar">
