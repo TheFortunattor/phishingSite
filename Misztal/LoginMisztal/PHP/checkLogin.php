@@ -1,6 +1,5 @@
 <?php
 	include("connect.php");
-	
 	$user = $_POST['name'];
 	$password = $_POST['pass'];
 	
@@ -11,10 +10,12 @@
         $query->bind_result($existe, $contraseña);
         $query->fetch();
         $query->close();
+
 		if ($existe) {
             if (password_verify($password, $contraseña)) {
                 session_start();
                 $_SESSION['usuario'] = $user;
+                $query->bind_param("s", $user);
                 echo "conectado " . $_SESSION['usuario'];
             } 
             else {

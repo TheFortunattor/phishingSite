@@ -1,9 +1,9 @@
 <?php
-	$server = "LocalHost";
+	$server = "LocalHost:3307";
 	$user = "login";
 	$password = "1234";
-	$db = "BaseUsuarios";
-	$conexion = new mysqli($server, $user, $password, $db);
-	
+	$db = "baseusuarios";
+	$conexion = mysqli_connect($server, $user, $password, $db);
+
 	mysqli_set_charset($conexion, "utf8");	
 ?>
