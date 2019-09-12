@@ -12,10 +12,9 @@
         $query->close();
 
 		if ($existe) {
-            if ($password == $contraseña) {
+            if (password_verify($password, password_hash($contraseña, PASSWORD_BCRYPT))) {
                 session_start();
                 $_SESSION['usuario'] = $user;
-                $query->bind_param("s", $user);
                 echo "conectado " . $_SESSION['usuario'];
             } 
             else {
