@@ -12,7 +12,7 @@
         $query->close();
 
 		if ($existe) {
-            if (password_verify($password, $contraseña)) {
+            if ($password == $contraseña) {
                 session_start();
                 $_SESSION['usuario'] = $user;
                 $query->bind_param("s", $user);
