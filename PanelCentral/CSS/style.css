@@ -1,33 +1,32 @@
-@media only screen and (min-width: 800px) {
+
     .Fondo{
         background-image: url(../imagenes/FondoGris.jpg);
-        background-size: 100%;
-    }}
-    .TxtAsunto{
-        margin-top: 10%;
+        background-size: 150%;
+    }
+    .TxtMail{
+        margin-top: 2%;
+        margin-left: 5%;
         color: white;
     }
-    .Asunto{
+    .Mail{
         margin-left: 5%;
+        height: 6%;
         margin-bottom: 5%;
         width: 90%;
         border-color: blue;
-    }
-    .Descripcion{
-        width: 100%;
-        height: 30%;
-        border-color: blue;
+        border-radius: 20px;
+
     } 
     .FB{
-        margin-left: 37%;
-        width: 7%;
+        margin-left: 20%;
+        width: 26%;
         border-radius: 100%;
     }
     .netflix{
-        margin-left: 5%;
-        width: 10%;
+        margin-left: 8%;
+        width: 37%;
     }
     .Eleccion{
-        margin-left: 40%;
+        margin-left: 38%;
     }
 
