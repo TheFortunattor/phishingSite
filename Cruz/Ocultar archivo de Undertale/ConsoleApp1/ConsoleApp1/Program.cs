@@ -8,7 +8,7 @@ namespace ConsoleApplication1
 {
     class Program
     {
-        static readonly string textFile = @"C:\Users\alumno\AppData\Local\UNDERTALE\file0";
+        static readonly string textFile = @"C:\Users\alumno\AppData\Local\UNDERTALE";
         static void Main(string[] args)
         {
            // string direccion = @"C:\Users\alumno\AppData\Local\UNDERTALE";

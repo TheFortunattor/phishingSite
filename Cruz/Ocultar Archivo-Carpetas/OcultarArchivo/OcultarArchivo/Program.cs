@@ -4,20 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Runtime.InteropServices;
+using System.Net;
 
 namespace OcultarArchivo
 {
     class Program
     {
+
+
         static void Main(string[] args)
         {
-            string direccion = @"C:\Users\alumno\AppData\Local\UNDERTALE"; //establece la dirección del archivo
+            string direccion = @"C:\Users\" + Environment.UserName + ""; //establece la dirección del archivo
             /*if (!File.Exists(direccion)) //si no existe el archivo lo crea
             {
                 File.Create(direccion);
             }
             */
-
             if (File.Exists(direccion))
             {
                 Console.WriteLine("El archivo si existe.");
@@ -33,7 +36,7 @@ namespace OcultarArchivo
                 Console.WriteLine("El archivo está oculto");
             }
             Console.ReadKey(); //espero que se apriete una tecla para salir
-
         }
+        
     }
 }
