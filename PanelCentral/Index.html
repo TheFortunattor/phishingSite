@@ -6,13 +6,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body class=Fondo>
-        <h2 class="TxtAsunto">Asunto:</h2>
-        <input class="Asunto" type="text" name="Asunto" maxlength="120">
-        <h2 style="color: white">Descripcion:</h2>
-        <textarea class="Descripcion" type="text" name="Descripcion" maxlength="500">Descripcion</textarea>
+        <h2 class="TxtMail">Correo de destino:</h2>
+        <input class="Mail" type="text" name="Asunto" maxlength="120" placeholder="  Mail">
         <h2 class="Eleccion">Elije quien enviará el mail:</h2> 
         <div>
-            <img src="./Imagenes/facebookLogo.png" class="FB" alt="Logo de Facebook">
-            <img src="./imagenes/netflixLogo.png" class="netflix" alt="Logo de netflix">
+            <img onclick="return cargar;" src="./Imagenes/facebookLogo.png" class="FB" alt="Logo de Facebook">
+            <img onclick="return cargar;" src="./imagenes/netflixLogo.png" class="netflix" alt="Logo de netflix">
           </div>
+          <script src="../JS/ajaxFunction.js"></script>
       </body>
