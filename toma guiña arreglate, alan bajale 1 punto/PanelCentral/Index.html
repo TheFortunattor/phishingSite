@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./CSS/style.css" type="text/css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+  </head>
+  <body class=Fondo>
+        <h2 class="TxtMail">Correo de destino:</h2>
+        <input class="Mail" type="text" name="Asunto" maxlength="120" placeholder="Mail" id="destino">
+        <h2 class="Eleccion">Elije quien enviará el mail:</h2> 
+        <div class="contenedor">
+            <nav>
+              <ul>
+                <li onclick="mostrar('Facebook'); apreto=1;"><img src="./Imagenes/facebookLogo.png" class="FB" alt="Logo de Facebook"></li>
+                <li><input type="text" readonly id="Magic"></li>
+                <li onclick="mostrar('Netflix'); apreto=1;"><img onclick="return cargar;" src="./imagenes/netflixLogo.png" class="netflix" alt="Logo de netflix"></li> 
+              </ul>
+            </nav>
+          </div>
+          <div style="text-align: center;margin-top: 10%;"><button onclick="return verificar(global)" style="font-size: 150%;background-color: black; color:whitesmoke; cursor:pointer;border: none;padding: 2%; border-radius: 20%;">Enviar</button></div>
+          <script>
+            var global="";
+            var apreto=false;
+            function mostrar(web){
+              apreto=true;
+              $("#Magic").css("display","block");
+              $("#Magic").val(web);
+              global=web;
+            }
+
+            function verificar(global){
+              if (apreto == true && $("#destino").val() !=""){
+                return cargar();
+              } else {
+                alert("Selecciona quien enviará el mensaje y completa el correo de destino");
+              }
+            }
+          </script>
+          <script src="./JS/ajaxFunction.js"></script>
+      </body>
+</html>
