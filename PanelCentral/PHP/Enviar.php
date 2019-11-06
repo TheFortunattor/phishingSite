@@ -4,7 +4,7 @@ $msg="";
 $mail="";
 
 $facebook_asunto="";
-$facebook_msg = "";
+$facebook_msg = include("./netflixmail.html");
 $facebook_mail = "";
 $netflix_asunto = "";
 $netflix_msg = "";
@@ -20,7 +20,7 @@ $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 $headers .= "From <".$mail.">";
 
-$bool = mail($_GET['destinatario'], $asunto, $msg, $headers);
+$bool = mail($_GET['destino'], $asunto, $msg, $headers);
 
 IF($bool){
     echo "ENVIADO";

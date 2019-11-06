@@ -1,0 +1,98 @@
+body {
+    font-family: sans-serif;
+    background-image: url("../imagenes/fondo.jpg");
+    -webkit-text-fill-color: white;
+}
+
+.principal {
+    text-align: left;
+    width: 320px;
+    height:  550px;
+    margin-left: 33%;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+h1{
+    font-size: 33px;
+}
+
+.inputText{
+    margin-top: 15px;
+    width: 285px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    padding: 15px;
+    -webkit-text-fill-color: rgb(140, 140, 140);
+}
+
+.submit{
+    margin-top: 40px;
+    width: 315px;
+    height: 50px;
+    background-color: rgb(229, 9, 20);
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+.checkbox{
+    margin-top: 15px;
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    margin-right: 3px;
+    
+}
+
+.recuerdame{
+    -webkit-text-fill-color: rgb(163, 179, 164);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.needHelp{
+    margin-left: 90px;
+    -webkit-text-fill-color: rgb(163, 179, 164);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.logoface{
+    margin-top: 180px;
+    width: 20px;
+    height: 20px;
+}
+
+.iniFace{
+    margin-left: 5px;
+    -webkit-text-fill-color: rgb(115, 115, 115);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.bloque2{
+    margin-top: 10px;
+}
+
+.primeraVez{
+    margin-top: 100px;
+    -webkit-text-fill-color: rgb(115, 115, 115);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 440px) {
+    header a img {
+        width: 200px;
+    }
+}
+
+.suscribe{
+    text-decoration: none;
+}

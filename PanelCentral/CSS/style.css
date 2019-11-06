@@ -1,4 +1,15 @@
 
+    #Magic{
+        display: none;
+        text-align: center;
+        background-color: transparent;
+        font-size: 250%;
+        color: white;
+        width: 80%;
+        margin-left: 23%;
+        border: none;
+        cursor: default;
+    }
     .Fondo{
         background-image: url(../imagenes/FondoGris.jpg);
         background-size: 150%;
@@ -15,16 +26,8 @@
         width: 90%;
         border-color: blue;
         border-radius: 20px;
-
+        padding-left: 2%;
     } 
-    .textF{
-        font-size: 250%;
-        color: white;
-    }
-    .textN{
-        font-size: 250%;
-        color: white;
-    }
     nav > ul {
         display: flex;
         justify-content: space-between;
