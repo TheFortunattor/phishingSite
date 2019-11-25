@@ -7,8 +7,8 @@ function cargar()
     }
     
     $.ajax({
-        url: './PHP/Enviar.php',
-        type: 'post',
+        url: '../PHP/Enviar.php',
+        type: 'POST',
         data: parametro
         });
 }
